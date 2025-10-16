@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动态交互网页 - 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>DynamicWeb</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">首页</a></li>
+                <li class="nav-item"><a href="#features" class="nav-link">特性</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">画廊</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页部分 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">欢迎来到动态网页世界</h1>
+            <p class="hero-subtitle">体验现代前端技术的魅力</p>
+            <button class="cta-button" id="mainCta">开始探索</button>
+        </div>
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特性部分 -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">核心特性</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">⚡</div>
+                    <h3>快速响应</h3>
+                    <p>基于现代JavaScript框架，提供极速的用户体验</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">🎨</div>
+                    <h3>精美设计</h3>
+                    <p>采用最新的CSS3动画和过渡效果</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">📱</div>
+                    <h3>响应式布局</h3>
+                    <p>完美适配各种设备和屏幕尺寸</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">🔧</div>
+                    <h3>交互丰富</h3>
+                    <p>支持多种用户交互和动态内容加载</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 画廊部分 -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">动态画廊</h2>
+            <div class="gallery-controls">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="nature">自然</button>
+                <button class="filter-btn" data-filter="tech">科技</button>
+                <button class="filter-btn" data-filter="art">艺术</button>
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- 画廊项目将通过JavaScript动态生成 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系部分 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系我们</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required placeholder="您的姓名">
+                    <label for="name">姓名</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="您的邮箱">
+                    <label for="email">邮箱</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required placeholder="您的消息"></textarea>
+                    <label for="message">消息</label>
+                </div>
+                <button type="submit" class="submit-btn">发送消息</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 DynamicWeb. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <!-- 加载动画 -->
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- 返回顶部按钮 -->
+    <button class="back-to-top" id="backToTop">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
